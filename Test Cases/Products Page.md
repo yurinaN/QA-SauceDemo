@@ -1,0 +1,17 @@
+| Test Case ID | Title | Preconditions | Steps | Test Data | Expected Result | Actual Result | Status | Priority | Notes |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| TC-12 | Verify sorting by Name (A to Z) | Products Page is open | 1. Open sorting dropdown<br>2. Select "Name (A to Z)" | N/A | Products are sorted alphabetically form A to Z |  |  |  |  |
+| TC-13 | Verify sorting by Name (Z to A) | Products Page is open | 1. Open sorting dropdown<br>2. Select "Name (Z to A)" | N/A | Products are sorted alphabetically form Z to A |  |  |  |  |
+| TC-14 | Verify sorting by Price (low to high) | Products Page is open | 1. Open sorting dropdown<br>2. Select "Price (low to high)" | N/A | Products are sorted by price ascending |  |  |  |  |
+| TC-15 | Verify sorting by Price (high to low) | Products Page is open | 1. Open sorting dropdown<br>2. Select "Price (high to low)" | N/A | Products are sorted by price descending |  |  |  |  |
+| TC-16 | Verify clicking Add to cart updates cart icon | Products Page is open | 1. Click Add to cart button | Any product | Cart icon count increases by 1 |  |  |  |  |
+| TC-17 | Verify Add to cart text changes after adding to cart | Products Page is open | 1. Click Add to cart button | Any product | Button text changes form Add to cart to Remove |  |  |  |  |
+| TC-18 | Verify clicking Remove updates cart icon | Products Page is open; <br>Product is already added to cart | 1. Click Remove button | Product that added to cart | Cart icon count decreases by 1 |  |  |  |  |
+| TC-19 | Verify Remove text changes after adding to cart | Products Page is open; <br>Product is already added to cart | 1. Click Remove button | Product that added to cart | Button text changes form Remove to Add to cart |  |  |  |  |
+| TC-20 | Verify clicking product name navigates to product detail Page | Products Page is open | 1. Click the product name | Any product | User is navigated to the product detail Page |  |  |  |  |
+| TC-21 | Verify clicking product image navigates to product detail Page | Products Page is open | 1. Click the product image | Any product | User is navigated to the product detail Page |  |  |  |  |
+| TC-22 | Verify “Back to products” button returns to products Page | Product detail Page is open | 1. Click Back to products button | N/A | User is navigated back to the products Page |  |  |  |  |
+| TC-23 | Verify Add/Remove works correctly after sorting | Products Page is open | 1. Sort products (any option) <br>2. Click Add to cart on a product <br>3. Verify cart icon and button <br>4. Click Remove <br>5. Verify cart icon and button | Any product | Add/Remove still updates cart icon and button text correctly after sorting |  |  |  |  |
+| TC-24 | Verify all images and links work correctly | Products Page is open | 1. Observe each product image and link <br>2. Click a few links/images | N/A | All images load properly; links navigate to correct Pages; no broken images or 404 Pages |  |  |  |  |
+| TC-25 | Verify cart handles rapid add/remove actions | Products Page is open | 1. Click Add to cart on multiple products quickly <br>2. Click Remove on some quickly | Any product | Cart icon updates correctly; no errors occur; button text changes correctly |  |  |  |  |
+| TC-26 | Verify cart badge updates in real-time | Products Page is open | 1. Add a product to cart <br>2. Observe cart badge <br>3. Remove product <br>4. Observe cart badge | Any product | Cart badge increments/decrements immediately when items are added or removed |  |  |  |  |

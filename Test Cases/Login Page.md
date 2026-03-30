@@ -1,0 +1,13 @@
+| Test Case ID | Title | Preconditions | Steps | Test Data | Expected Result | Actual Result | Status | Priority | Notes |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| TC-01 | Login with valid credentials (using button or Enter key) | Login Page is open | 1. Enter username<br>2. Enter password<br>3. Click "Login" button | standard_user / secret_sauce | User is redirected to products Page |  |  | High |  |
+| TC-02 | Login with invalid username | Login Page is open | 1. Enter wrong username <br>2. Enter password<br>3. Click "Login" button | wrong_user / secret_sauce | Error message is displayed |  |  | High |  |
+| TC-03 | Login with invalid password | Login Page is open | 1. Enter username <br>2. Enter wrong password <br>3. Click "Login" button | standard_user / wrong_pass | Error message is displayed |  |  | High |  |
+| TC-04 | Login with empty username | Login Page is open | 1. Leave username empty <br>2. Enter password <br>3. Click "Login" button | (empty) / secret_sauce | Error message is displayed |  |  | Medium |  |
+| TC-05 | Login with empty password | Login Page is open | 1. Enter username<br>2. Leave password empty<br>3. Click "Login" button | standard_user / (empty) | Error message is displayed |  |  | Medium |  |
+| TC-06 | Login with empty username & password | Login Page is open | 1. Leave username empty<br>2. Leave password empty<br>3. Click "Login" button | (empty) / (empty) | Error message is displayed |  |  | Medium |  |
+| TC-07 | Verify password masking | Login Page is open | 1. Click on the password field<br>2. Type any password | secret123 | Characters are hidden (displayed as bullets) |  |  | Medium |  |
+| TC-08 | Verify paste works in password field | Login Page is open | 1. Copy a password string<br>2. Click on passwoed field<br>3. Paste the copied password | secret123 | Password is pasted into the field and masked |  |  | Medium |  |
+| TC-09 | Test SQL/Script injection in login fields | Login Page is open | 1. Enter malicious SQL/script in username<br>2. Enter malicious SQL/script in password<br>3. Click "Login" button | ' OR '1'='1; <script>alert(1)</script> | Error message is displayed |  |  | High |  |
+| TC-10 | Test extremely long input in login fields | Login Page is open | 1. Enter very long string (e.g., 500+ characters) in username <br>2. Enter very long string in password <br>3. Click "Login" button | aaaa…aaa (500+ chars) | Error message is displayed |  |  | Medium |  |
+| TC-11 | Test special characters in login fields | Login Page is open | 1. Enter username with special characters <br>2. Enter password with special characters <br>3. Click "Login" button | !@#$%^&*() | Error message is displayed |  |  | Medium |  |

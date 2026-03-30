@@ -4,5 +4,5 @@ This repository contains QA checklists for practicing manual testing on [SauceDe
 It covers the full user flow: Login → Catalog → Product → Cart → Checkout.
 
 ## How to Use
-All checklists are in [Checklist.md](Checklist.md).  
+All checklists are in [Checklists.md](Checklists.md).  
 Follow the checklists while testing and mark each item as Done (✓/✗).
